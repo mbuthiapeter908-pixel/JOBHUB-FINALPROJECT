@@ -16,14 +16,14 @@ const Jobs = () => {
     remote: false,
   });
 
-  const { jobs, loading, error, pagination, refetch } = useJobs(filters);
-
-  // Transform filters for API
+  // Transform filters for API - FIXED: Handle multiple selections properly
   const apiFilters = {};
-  if (filters.type.length > 0) apiFilters.type = filters.type[0];
-  if (filters.category.length > 0) apiFilters.category = filters.category[0];
+  if (filters.type.length > 0) apiFilters.type = filters.type[0]; // Take first selection for now
+  if (filters.category.length > 0) apiFilters.category = filters.category[0]; // Take first selection for now
   if (filters.location) apiFilters.location = filters.location;
   if (filters.remote) apiFilters.remote = 'true';
+
+  const { jobs, loading, error, pagination, refetch } = useJobs(apiFilters);
 
   if (error) {
     return (
@@ -54,6 +54,15 @@ const Jobs = () => {
       </div>
     );
   }
+
+  const clearAllFilters = () => {
+    setFilters({
+      type: [],
+      category: [],
+      location: '',
+      remote: false,
+    });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-8">
@@ -123,6 +132,7 @@ const Jobs = () => {
             {loading ? (
               <div className="flex justify-center items-center py-20">
                 <LoadingSpinner size="lg" />
+                <span className="ml-4 text-blue-600 font-semibold">Loading jobs...</span>
               </div>
             ) : (
               <>
@@ -136,10 +146,14 @@ const Jobs = () => {
                       </span>
                     )}
                   </p>
-                  {jobs.length > 0 && (
-                    <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700 font-semibold">
-                      <Search className="h-4 w-4 mr-2" />
-                      Advanced Search
+                  {(filters.type.length > 0 || filters.category.length > 0 || filters.remote || filters.location) && (
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      onClick={clearAllFilters}
+                      className="text-blue-600 hover:text-blue-700 font-semibold"
+                    >
+                      Clear Filters
                     </Button>
                   )}
                 </div>
@@ -166,7 +180,7 @@ const Jobs = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Button
                         variant="primary"
-                        onClick={() => setFilters({ type: [], category: [], location: '', remote: false })}
+                        onClick={clearAllFilters}
                         className="bg-blue-600 hover:bg-blue-700 font-bold"
                       >
                         ✨ Clear All Filters

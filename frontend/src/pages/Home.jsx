@@ -106,8 +106,8 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 opacity-30">
+        {/* Background Elements */}
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
           <div className="absolute top-1/3 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-75"></div>
           <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-150"></div>
@@ -115,11 +115,11 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="text-center">
-            {/* Premium Badge */}
-            <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/80 backdrop-blur-sm border border-purple-200 shadow-lg mb-8 animate-bounce">
+            {/* Badge */}
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/80 backdrop-blur-sm border border-purple-200 shadow-lg mb-8">
               <Star className="h-5 w-5 text-yellow-500 mr-2 fill-current" />
               <span className="text-lg font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                🏆 #1 Youth Job Platform 2024
+                #1 Youth Job Platform 2025
               </span>
             </div>
 
@@ -129,7 +129,7 @@ const Home = () => {
               </span>
               <br />
               <span className="bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 bg-clip-text text-transparent">
-                Your Future
+                Your Career With JobHub
               </span>
             </h1>
             
@@ -183,7 +183,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose JobHub Section - ENHANCED */}
+      {/* Why Choose JobHub Section - FIXED ICONS */}
       <section className="bg-white py-20 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-[0.02]">
@@ -198,7 +198,7 @@ const Home = () => {
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 mb-6">
               <Star className="h-5 w-5 text-yellow-500 mr-2 fill-current" />
               <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Why JobHub Stands Out
+                Why JobHub Stands Out 
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
@@ -209,7 +209,7 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Features Grid */}
+          {/* Features Grid - FIXED ICONS */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div 
@@ -220,10 +220,10 @@ const Home = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                 
                 <div className="relative bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-transparent shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:scale-105">
-                  {/* Icon Container */}
+                  {/* Icon Container - FIXED */}
                   <div className="relative mb-6">
                     <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.bgColor} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                      <div className={`bg-gradient-to-r ${feature.color} bg-clip-text text-transparent`}>
+                      <div className="text-white">
                         {feature.icon}
                       </div>
                     </div>
@@ -236,7 +236,7 @@ const Home = () => {
                   <h3 className="text-2xl font-black text-gray-900 mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-lg font-medium">
+                  <p className="text-gray-600 leading-relaxed text-lg">
                     {feature.description}
                   </p>
 

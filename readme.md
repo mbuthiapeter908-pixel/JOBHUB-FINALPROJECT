@@ -351,6 +351,6 @@ Live Demo
 
 API Documentation
 
-Built with the MERN stack • Supporting Youth Employment • Aligned with SDG 8
+Built by developer Mbuthia • Supporting Youth Employment • Aligned with SDG 8
 
 For questions or support, please open an issue or contact the development team.

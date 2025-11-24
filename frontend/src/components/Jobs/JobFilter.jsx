@@ -122,29 +122,6 @@ const JobFilter = ({ filters, setFilters }) => {
         />
       </div>
 
-      {/* Salary Range */}
-      <div className="mb-6">
-        <h4 className="font-bold text-gray-900 mb-3 text-lg">Salary Range</h4>
-        <div className="space-y-3">
-          <div className="flex justify-between text-sm text-gray-600 font-medium">
-            <span>${filters.salaryRange[0].toLocaleString()}</span>
-            <span>${filters.salaryRange[1].toLocaleString()}</span>
-          </div>
-          <input
-            type="range"
-            min="0"
-            max="200000"
-            step="10000"
-            value={filters.salaryRange[1]}
-            onChange={(e) => setFilters({ 
-              ...filters, 
-              salaryRange: [filters.salaryRange[0], parseInt(e.target.value)] 
-            })}
-            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
-          />
-        </div>
-      </div>
-
       {hasActiveFilters && (
         <Button 
           variant="primary" 

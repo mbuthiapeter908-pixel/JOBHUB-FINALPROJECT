@@ -5,11 +5,12 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import connectDB from './config/database.js';
-
+import webhookRoutes from './routes/webhooks.js';
 // Import routes
 import jobRoutes from './routes/jobs.js';
 import employerRoutes from './routes/employers.js';
 import categoryRoutes from './routes/categories.js';
+import userRoutes from './routes/users.js';
 
 // Load environment variables
 dotenv.config();
@@ -28,6 +29,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.use('/api/users', userRoutes);
+app.use('/api/webhooks', webhookRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/employers', employerRoutes);
 app.use('/api/categories', categoryRoutes);

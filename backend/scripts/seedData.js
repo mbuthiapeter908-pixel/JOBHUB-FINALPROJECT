@@ -47,6 +47,76 @@ const sampleJobs = [
     isFeatured: true,
     isUrgent: false,
     employerId: "employer_003"
+  },
+  {
+    title: "Backend Developer",
+    company: "CodeCraft",
+    location: "Austin, TX",
+    type: "Full-time",
+    category: "Technology",
+    salary: "$85,000 - $110,000",
+    description: "Looking for a Backend Developer to build scalable APIs and services. Experience with Node.js, MongoDB, and cloud platforms required.",
+    requirements: ["Node.js", "MongoDB", "Express", "REST API", "AWS"],
+    isRemote: true,
+    isFeatured: false,
+    isUrgent: true,
+    employerId: "employer_004"
+  },
+  {
+    title: "Data Analyst",
+    company: "DataInsights",
+    location: "Chicago, IL",
+    type: "Full-time",
+    category: "Business",
+    salary: "$65,000 - $85,000",
+    description: "Join our data team to analyze business metrics and provide insights. Perfect for recent graduates with strong analytical skills.",
+    requirements: ["SQL", "Excel", "Data Visualization", "Statistics"],
+    isRemote: false,
+    isFeatured: true,
+    isUrgent: false,
+    employerId: "employer_005"
+  },
+  {
+    title: "Product Manager",
+    company: "InnovateTech",
+    location: "Seattle, WA",
+    type: "Full-time",
+    category: "Business",
+    salary: "$95,000 - $120,000",
+    description: "Lead product development from conception to launch. Work with engineering, design, and marketing teams to build products users love.",
+    requirements: ["Product Management", "Agile", "User Stories", "Roadmapping"],
+    isRemote: true,
+    isFeatured: true,
+    isUrgent: false,
+    employerId: "employer_006"
+  },
+  {
+    title: "Customer Success Manager",
+    company: "SaaS Solutions",
+    location: "Remote",
+    type: "Full-time",
+    category: "Customer Service",
+    salary: "$60,000 - $75,000",
+    description: "Help our customers achieve their goals using our platform. Build strong relationships and ensure customer satisfaction and retention.",
+    requirements: ["Customer Service", "CRM", "Communication", "Problem Solving"],
+    isRemote: true,
+    isFeatured: false,
+    isUrgent: false,
+    employerId: "employer_007"
+  },
+  {
+    title: "DevOps Engineer",
+    company: "CloudSystems",
+    location: "Boston, MA",
+    type: "Full-time",
+    category: "Technology",
+    salary: "$90,000 - $115,000",
+    description: "Manage our cloud infrastructure and deployment pipelines. Experience with Docker, Kubernetes, and CI/CD required.",
+    requirements: ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"],
+    isRemote: true,
+    isFeatured: true,
+    isUrgent: true,
+    employerId: "employer_008"
   }
 ];
 
@@ -84,6 +154,66 @@ const sampleEmployers = [
     location: "Austin, TX",
     contactEmail: "jobs@designstudio.com",
     userId: "employer_003",
+    isVerified: true,
+    jobCount: 1
+  },
+  {
+    companyName: "CodeCraft",
+    description: "Software development company building modern applications",
+    website: "https://codecraft.com",
+    industry: "Technology",
+    size: "11-50",
+    location: "Austin, TX",
+    contactEmail: "jobs@codecraft.com",
+    userId: "employer_004",
+    isVerified: true,
+    jobCount: 1
+  },
+  {
+    companyName: "DataInsights",
+    description: "Data analytics consulting firm",
+    website: "https://datainsights.com",
+    industry: "Business",
+    size: "51-200",
+    location: "Chicago, IL",
+    contactEmail: "careers@datainsights.com",
+    userId: "employer_005",
+    isVerified: true,
+    jobCount: 1
+  },
+  {
+    companyName: "InnovateTech",
+    description: "Product development studio for startups",
+    website: "https://innovatetech.com",
+    industry: "Technology",
+    size: "11-50",
+    location: "Seattle, WA",
+    contactEmail: "hello@innovatetech.com",
+    userId: "employer_006",
+    isVerified: true,
+    jobCount: 1
+  },
+  {
+    companyName: "SaaS Solutions",
+    description: "Software as a Service company for small businesses",
+    website: "https://saassolutions.com",
+    industry: "Technology",
+    size: "51-200",
+    location: "Remote",
+    contactEmail: "info@saassolutions.com",
+    userId: "employer_007",
+    isVerified: true,
+    jobCount: 1
+  },
+  {
+    companyName: "CloudSystems",
+    description: "Cloud infrastructure and DevOps consulting",
+    website: "https://cloudsystems.com",
+    industry: "Technology",
+    size: "11-50",
+    location: "Boston, MA",
+    contactEmail: "jobs@cloudsystems.com",
+    userId: "employer_008",
     isVerified: true,
     jobCount: 1
   }
