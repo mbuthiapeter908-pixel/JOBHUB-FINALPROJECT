@@ -1,9 +1,6 @@
 🚀 JobHub - Youth Job Platform
 JobHub is a modern, full-stack MERN application designed specifically for youth employment opportunities. Connect talented young individuals with amazing career opportunities from forward-thinking companies.
 
-https://img.shields.io/badge/JobHub-Youth%2520Jobs-brightgreen
-https://img.shields.io/badge/Stack-MERN-blue
-https://img.shields.io/badge/Aligned-SDG%25208-yellow
 
 ✨ Features
 🎯 For Job Seekers
@@ -144,11 +141,12 @@ cd frontend
 npm run dev
 Access the Application
 
-Frontend: http://localhost:3000
+Frontend: https://jobhubf.netlify.app/
 
-Backend API: http://localhost:5000
+Backend API: https://backenddeployment-production-e95b.up.railway.app/
 
-API Health: http://localhost:5000/health
+API Health: https://backenddeployment-production-e95b.up.railway.app/api/health
+
 
 📚 API Documentation
 Jobs Endpoints
@@ -253,7 +251,7 @@ javascript
   jobCount: Number
 }
 🌟 Key Features Implemented
-✅ Completed
+
 Beautiful, responsive UI with Tailwind CSS
 
 Full CRUD operations for jobs and employers
@@ -340,17 +338,17 @@ Verify all environment variables are set
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👥 Team
-JobHub is developed with ❤️ for youth empowerment and career development.
+JobHub is developed by mbuthia for youth empowerment and career development.
 
 🔗 Links
-Frontend Repository
+Frontend Repository:https://github.com/mbuthiapeter908-pixel/frontenddeployment.git
 
-Backend Repository
+Backend Repository:https://github.com/mbuthiapeter908-pixel/BACKENDdeployment.git
 
-Live Demo
+Live Demo:https://jobhubf.netlify.app/
 
 API Documentation
 
-Built by developer Mbuthia • Supporting Youth Employment • Aligned with SDG 8
+Built by developer Mbuthia • 
 
 For questions or support, please open an issue or contact the development team.
