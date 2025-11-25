@@ -93,7 +93,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-purple-800/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-purple-300 text-sm mb-4 md:mb-0">
-            © 2025 JobHub. Made with 💜 for youth empowerment
+            © 2025 JobHub. Made with ✍️ by mbuthia for youth empowerment
           </p>
           <Button
             variant="ghost"
