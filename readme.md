@@ -351,4 +351,4 @@ API Documentation
 
 Built by developer Mbuthia • 
 
-For questions or support, please open an issue or contact the development team.
+For questions or support, please open an issue or contact the mbuthia.
