@@ -141,7 +141,7 @@ cd frontend
 npm run dev
 Access the Application
 
-Frontend: https://jobhubf.netlify.app/
+Frontend:https://frontenddeploymentf.vercel.app/
 
 Backend API: https://backenddeployment-production-e95b.up.railway.app/
 
@@ -267,10 +267,10 @@ Error handling and validation
 Pagination and statistics
 
 Sample data seeder
+ 
+ User authentication with Clerk
 
 🚧 Planned Enhancements
-User authentication with Clerk
-
 Job application system
 
 Real-time notifications
