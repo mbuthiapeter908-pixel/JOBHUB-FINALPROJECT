@@ -341,11 +341,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 JobHub is developed by mbuthia for youth empowerment and career development.
 
 🔗 Links
-Frontend Repository:https://github.com/mbuthiapeter908-pixel/frontenddeployment.git
 
-Backend Repository:https://github.com/mbuthiapeter908-pixel/BACKENDdeployment.git
+Github repository:https://github.com/mbuthiapeter908-pixel/JOBHUB-FINALPROJECT.git
 
-Live Demo:https://jobhubf.netlify.app/
+Live Demo:https://frontenddeploymentf.vercel.app/
 
 API Documentation
 
